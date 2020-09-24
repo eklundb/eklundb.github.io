@@ -1,0 +1,170 @@
+/* Default Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" );
+
+html {
+    font-size:16px;
+    font-family:Open Sans, Roboto, Ubuntu, sans-serif;
+    font-weight:300;
+    color:#333;
+    background-color: black;
+}
+
+body {
+    font-family:Ubuntu, Roboto, Open Sans, sans-serif;
+    margin:0;
+    padding:2%;
+    background-color: black;
+}
+
+h1  {
+    font-family:Ubuntu, sans-serif;
+    font-size:2.85rem;
+    padding:0.5rem 1rem;
+    background-color:aquamarine    
+}   
+
+.top-nav {
+    display:flex;
+    flex-direction: column;
+}
+
+.top-nav a {
+    font-family:Ubuntu, Roboto, Open Sans, sans-serif;
+    font-size:1.5rem;
+    padding:.5rem 1rem;
+    margin-bottom:.5rem;
+    color:antiquewhite;
+    background-color:#563635;
+    text-decoration: none;
+    border-radius:.125rem;
+    box-shadow:0 2px 2px #333;
+}
+
+.article-header h2 {
+    font-family: Ubuntu, sans-serif;
+    font-size:1.85rem;
+    margin-bottom:.5rem;
+}
+
+.location {
+    font-style: italic;
+    font-weight: 100;
+    margin:0;
+}
+
+.article-1 p,
+.article-2 p {
+    text-align: justify;
+}
+
+.image-sidebar figure {
+    margin:.5rem auto;
+    width:98%;
+}
+
+.image-sidebar img {
+    box-shadow:0 2px 2px #333;
+    width:100%;
+}
+
+.bottom-nav {
+    text-align:center;
+    margin:2rem 0;
+}
+
+.bottom-nav a {
+    padding:0 .25rem;
+    color:#191010;
+}
+
+.copyright a,
+.attribution a {
+    color:#191010;
+}
+
+/* styles for pages at least 500px wide */
+
+@media (min-width:500px) {
+    
+    .page-header h1 {
+        
+        font-size:3rem;
+    }
+    
+    .top-nav {
+        flex-direction:row;
+    }
+    
+    .top-nav a {
+        
+        padding:.5rem 1rem;
+        margin-right:1.5%;
+    }
+}
+
+/* styles for pages at least 600px wide */
+
+@media (min-width:600px) {
+   .page-header h1 {  
+      font-size:3.5rem;
+    }
+    
+    .top-nav {
+        margin:1rem 0 2.5rem 0;
+    }
+    
+}
+
+/* styles for pages at least 800px wide */
+
+@media (min-width:800px) {
+    .page-header h1 {  
+      font-size:4rem;
+    }
+    
+    .image-sidebar {
+        display:flex;
+        flex-direction: row;
+    }
+    
+    .image-sidebar figure {
+        width:33%;
+    }
+    
+}
+
+/* styles for pages at least 1000px wide */
+
+@media (min-width:1000px) {
+ .page-header h1 {  
+      font-size:4rem;
+    }
+    
+    .section-1 {
+        display:flex;
+        flex-direction: row;        
+    }
+    
+    .article-1 {
+        width:49%;
+        padding-right:1%;
+    }
+
+    .article-2 {
+        width:49%;
+        padding-left:1%;
+    }
+    
+}
+
+/* styles for pages at least 1300px wide */
+
+@media (min-width:1300px) {
+   
+    html {
+         background-color: rgb(240, 240, 240);
+    }
+    
+    body {
+        margin:1rem auto;
