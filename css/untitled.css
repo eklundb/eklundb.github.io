@@ -1,0 +1,10 @@
+/* Default Styles */
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+h1 {
+    font-family:Ubuntu,Roboto,sans-serif;
+    font-size:3.0rem;
+    font-style: italic,bold;
+}
+body 
