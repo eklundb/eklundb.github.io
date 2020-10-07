@@ -7,15 +7,15 @@ html {
     font-family:Roboto, Arial, sans-serif;
     font-weight:300;
     color:#333;
-    background-color: antiquewhite;
 }
 
 body {
     margin:0;
     padding:2%;
+    background-color: bisque;
 }
 
-.page-header h1 {
+h1 {
     font-family:Martel, Garammond, serif;
     font-size:4rem;
     margin-bottom:1rem;
@@ -26,19 +26,19 @@ body {
     margin:2rem 0 4rem 0;
 }
 
-.page-nav a {
+a {
     font-family:Martel, Garammond, serif;
     font-size:1.75rem;
     padding:.5rem 1rem;
     margin-bottom:.5rem;
-    color:antiquewhite;
+    color:bisque;
     background-color:#563635;
     text-decoration: none;
     border-radius:.125rem;
     box-shadow:0 2px 2px #333;
 }
 
-.sub-header h2 {
+h2 {
     font-size:1.5rem;
 }
 
