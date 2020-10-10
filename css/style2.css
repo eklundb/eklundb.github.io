@@ -9,16 +9,16 @@
 
 html {
     font-size:16px;
-    font-family:Open Sans, Roboto, Ubuntu, sans-serif;
+    font-family:Ubuntu, Open Sans, Roboto, sans-serif;
     font-weight:300;
     color:#333;
     background-color: black;
 }
 
 body {
-    font-family:Ubuntu, Roboto, Open Sans, sans-serif;
-    margin:0;
-    padding:2%;
+    font-family:Ubuntu, Open Sans, Roboto, sans-serif;
+    margin:5px;
+    padding:10px;
     background-color: whitesmoke;
 }
 
@@ -143,8 +143,6 @@ menu {
     }
     
 }
-
-/* styles for pages at least 1000px wide */
 
 @media (min-width:1000px) {
  .page-header h1 {  
