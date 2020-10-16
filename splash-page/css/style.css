@@ -14,9 +14,9 @@
 
 :root {
     --main-font:'Roboto', sans-serif;
-    --secondary-font:'Source Sans Pro', sans-serif;
-    --main-color:#333;
-    --main-background-color:rgb(200, 200, 200);
+    --secondary-font:'Source Sans Pro',sans-serif;
+    --main-color: default;
+    --main-background-color:rgb(500, 200, 200, .75);
     --top-position:35%;
     font-size:16px;
 }
@@ -24,13 +24,17 @@
 body {
         font-family:var(--main-font);
         font-weight:400;
+        align-content: center;
         margin:0;
         padding:0;
         box-sizing: border-box;
         color:var(--main-color);
         background-color:var(--main-background-color);
 }
-
+.footer {
+    text-align: center;
+    
+}
 .social-media-links {
     padding:1px;
     text-align: center;
@@ -41,7 +45,7 @@ body {
 }
 
 .social-media-links img {
-    width:100%;
+    width:85%;
     max-width:48px;
     margin: 0,1;
     padding-right:25px;
@@ -65,7 +69,8 @@ body {
 }
 
 .main-heading h1 {
-    margin-bottom:0
+    margin-bottom:0;
+    align-content: center
 }
 
 .main-heading h1 a {
@@ -76,11 +81,12 @@ body {
 }
 
 .main-heading h1 a:hover {
-    color:rgba(10, 10, 10, 0.5);
+    color:rgb(100, 100, 100, 0.5);
 }
 
 .letter-box {
     color:#BA4C4E;
+    font-display: 
 }
 
 .main-heading p {
@@ -119,7 +125,7 @@ body {
     }
     
     .main-heading {
-        clip-path: circle(
+        clip-path: ellipse(
         0 0,
         100% 0,
         100% 100%,
@@ -137,7 +143,7 @@ body {
         100% 100%,
         0 calc(100% - 10vw)
         );
-        top:calc(var(--top-position) - 15%);
+        top:calc(var(--top-position) - 25%);
     }
     
     .main-heading h1 a {
@@ -160,7 +166,7 @@ body {
 @media (min-width:1200px) {
     
     body {
-        background-image: src=url(https://picsum.photos/id/104);
+        background-image: url("https://picsum.photos/id/104");
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -178,10 +184,11 @@ body {
     }
     
     .main-heading h1 a:hover {
-    color:rgb(100, 100, 200, .5);
+    color:rgba(100, 100, 200, .5);
+    font-size: 10rem;
     }
     .main-heading p {
-        color:rgb(199,200,100);
-        font-size:3rem;
+        color:rgb(199,200,100, .5);
+        font-size:5rem;
     }
 }
