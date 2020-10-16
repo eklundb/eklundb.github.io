@@ -61,11 +61,11 @@ body {
     );
     top:calc(var(--top-position) - 20%);
     padding:10rem 0;
-    text-align: justify;
+    text-align: wrap;
 }
 
 .main-heading h1 {
-    margin-bottom:0;
+    margin-bottom:0
 }
 
 .main-heading h1 a {
@@ -86,7 +86,7 @@ body {
 .main-heading p {
     font-size:2rem;
     color:var(--main-color);
-    margin-top:0;
+    margin-top:1px;
 }
 
 .svgs {
@@ -160,11 +160,9 @@ body {
 @media (min-width:1200px) {
     
     body {
-        background-image: url(https://picsum.photos/id/104);
+        background-image: src=url(https://picsum.photos/id/104);
         background-repeat: no-repeat;
         background-position: center;
-        margin-left:100px;
-        margin-right:100px;
     }
     
     .main-heading {
@@ -180,11 +178,10 @@ body {
     }
     
     .main-heading h1 a:hover {
-    color:rgba(255, 255, 255, .5);
+    color:rgb(100, 100, 200, .5);
     }
-    
     .main-heading p {
-        color:#222;
+        color:rgb(199,200,100);
         font-size:3rem;
     }
 }
