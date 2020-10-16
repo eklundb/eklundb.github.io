@@ -49,7 +49,7 @@ body {
 .main-heading {
     position:absolute;
     width:100%;
-    background: url(https://picsum.photos/id/104) no-repeat;
+    background: url(https://picsum.photos/id/104), no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     clip-path: polygon(
@@ -103,7 +103,7 @@ body {
 
 .content {
     height: 100%;
-    background: url(https://res.cloudinary.com/css-playground/image/upload/v1536261964/tutorials/deer.jpg);
+    background: url();
     background-size: ;
     background-position: center;
 }
