@@ -1,0 +1,194 @@
+@font-face {
+    font-family:'Source Sans Pro';
+    src: url(../splash-page/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+    font-weight:400 800;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Roboto';
+    src: url(../splash-page/fonts/Roboto/SourceSansPro-Regular.ttf);
+    font-weight:100 900;
+    font-style:normal;
+}
+
+:root {
+    --main-font:'Roboto', sans-serif;
+    --secondary-font:'Source Sans Pro',sans-serif;
+    --main-color: default;
+    --main-background-color:rgb(500, 200, 200, .75);
+    --top-position:35%;
+    font-size:16px;
+}
+
+body {
+        font-family:var(--main-font);
+        font-weight:400;
+        align-content: center;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        color:var(--main-color);
+        background-color:var(--main-background-color);
+}
+.footer {
+    text-align: center;
+    
+}
+.social-media-links {
+    padding:1px;
+    text-align: center;
+}
+
+.social-media-links a {
+    text-decoration: none;
+}
+
+.social-media-links img {
+    width:85%;
+    max-width:48px;
+    margin: 0,1;
+    padding-right:25px;
+}
+
+.main-heading {
+    position:absolute;
+    width:100%;
+    background: url(https://picsum.photos/id/104), no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(
+    10 10,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 6vw)
+    );
+    top:calc(var(--top-position) - 20%);
+    padding:10rem 0;
+    text-align: wrap;
+}
+
+.main-heading h1 {
+    margin-bottom:0;
+    align-content: center
+}
+
+.main-heading h1 a {
+    font-family:var(--secondary-font);
+    font-size:6rem;
+    color:rgba(200, 200, 200, .5);
+    text-decoration: none;
+}
+
+.main-heading h1 a:hover {
+    color:rgb(100, 100, 100, 0.5);
+}
+
+.letter-box {
+    color:#BA4C4E;
+    font-display: 
+}
+
+.main-heading p {
+    font-size:2rem;
+    color:var(--main-color);
+    margin-top:1px;
+}
+
+.svgs {
+    position: fixed;
+}
+
+.background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    right: ;
+    bottom: 10;
+    background: repeating-linear-gradient(40deg, #E6B3B3, #E6B3B3 5px, #B3B6E5 5px, #B3B6E5 10px);
+}
+
+.content {
+    height: 100%;
+    background: url();
+    background-size: ;
+    background-position: center;
+}
+
+.content {
+    -webkit-clip-path: circle(26.3em);
+    clip-path: circle(26.3em);
+}
+@media (min-width:600px) {
+    .social-media-links img {
+        max-width:40px;
+    }
+    
+    .main-heading {
+        clip-path: ellipse(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 8vw)
+        );
+        top:calc(var(--top-position) - 17%);
+    }
+}
+
+@media (min-width:800px) {
+    .main-heading {
+        clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 10vw)
+        );
+        top:calc(var(--top-position) - 25%);
+    }
+    
+    .main-heading h1 a {
+        font-size:8rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .main-heading {
+        clip-path: circle(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 10vw)
+        );
+        top:calc(var(--top-position) - 13%);
+    }
+}
+
+@media (min-width:1200px) {
+    
+    body {
+        background-image: url("https://picsum.photos/id/104");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .main-heading {
+        background:none;
+        clip-path:none;
+        padding:0;
+        top:var(--top-position);
+    }
+    
+    .main-heading h1 a {
+        font-size:12rem;
+        color:rgb(40, 40, 40);
+    }
+    
+    .main-heading h1 a:hover {
+    color:rgba(100, 100, 200, .5);
+    font-size: 10rem;
+    }
+    .main-heading p {
+        color:rgb(199,200,100, .5);
+        font-size:5rem;
+    }
+}
